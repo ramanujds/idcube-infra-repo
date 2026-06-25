@@ -71,6 +71,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 
   role_based_access_control_enabled = true
+  oidc_issuer_enabled = true
 
   tags = {
     environment = "dev"
